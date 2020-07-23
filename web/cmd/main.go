@@ -6,7 +6,7 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/double-nibble/algothon/web/server"
+	"github.com/double-nibble/algothon/web"
 )
 
 // TODO: stats
@@ -18,7 +18,7 @@ func main() {
 	ll := flag.String("log_level", "WARN", "Logging level (ERROR|WARN|INFO)")
 	flag.Parse()
 	loggingInit(ll)
-	server.ListenAndServe()
+	web.ListenAndServe()
 }
 
 func loggingInit(level *string) {
