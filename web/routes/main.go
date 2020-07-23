@@ -7,7 +7,7 @@ import (
 	"github.com/gorilla/mux"
 	"github.com/gorilla/sessions"
 
-	"github.com/double-nibble/algothon/web/userdb"
+	"github.com/double-nibble/algothon/userdb"
 )
 
 // Config supplies needed information about the router
