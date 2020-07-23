@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>This is the Title</title>
+        <link rel="stylesheet" type="text/css" href="/static/index.css">
+    </head>
+    <body>
+        <h1>Comments</h1>
+        <form method="POST">
+            <textarea name="comment"></textarea>
+            <div>
+                <button type="submit">Post Comment</button>
+            </div>
+        </form>
+        {{ if . }}
+            <div>{{ . }}</div>
+        {{ else }}
+            <div>No comments</div>
+        {{ end }}
+    </body>
+</html>
